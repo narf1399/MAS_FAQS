@@ -1,0 +1,10 @@
+#-- Python hierarchy --#
+1) scripts
+2) modules
+3) packages
+4) distributions
+
+#--Modules--#
+export PYTHONPATH = $PYTHONPATH:myModulePath
+
+
