@@ -1,0 +1,8 @@
+#-- Help about functions --#
+
+python -c "import numpy; numpy.info(numpy.add)"
+
+Change add to the function you want information about
+
+
+

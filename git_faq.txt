@@ -1,0 +1,14 @@
+# Initialize GIT
+git init
+# Add a file
+git add <filename>
+# Commit a file
+git commit -m "My comment about the commit" <filename>
+# Show info about the git status
+git log
+# Show the branches
+git branch
+# Change to a branch
+git branch <myBranch>
+# Show differences
+git diff <Commit ID1> <Commit ID2>

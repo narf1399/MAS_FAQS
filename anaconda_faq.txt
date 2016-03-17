@@ -1,0 +1,31 @@
+# Installation
+bash <filename>
+Accept first prompt
+Decline last prompt (change bashrc)
+
+# Setting up bashrc (PATH might need to be changed)
+
+Add following file to your .bashrc:
+alias enable_anaconda='bash --rcfile ~/.conda-bashrc'
+
+Add file ~/.conda-bashrc with the content:
+[ -f "~/.bashrc" ] && source ~/.bashrc
+export TERM=xterm-256color
+RED=$(tput setaf 1)
+BOLD=$(tput bold)
+RESET_ATTR=$(tput sgr0)
+PATH=$HOME/anaconda/bin:$PATH
+PS1="\[$RED\]\[$BOLD\][CONDA]\[$RESET_ATTR\]  $PS1"
+
+alias ipy='ipython qtconsole --pylab'
+alias startnb='ipython notebook'
+alias nb2pdf='ipython nbconvert --to latex --post PDF'
+
+# How to enable anaconda
+enable_anaconda
+
+# How to start the notebook
+ipython notebook
+
+# How to exit anaconda
+exit

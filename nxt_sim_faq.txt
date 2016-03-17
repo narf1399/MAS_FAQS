@@ -1,0 +1,17 @@
+# Download these files
+JGameGrid: http://www.aplu.ch/home/download/JGameGrid.zip
+NxtJLib: http://www.aplu.ch/home/download/NxtJLibA.zip
+
+# Add external Jars
+JGameGrid
+	RobotSim
+		lib
+	lib
+
+NxtJLib
+	lib
+--------------
+classes.jar
+JGameGrid.jar
+NxtJLibA.jar
+RobotSim.jar
