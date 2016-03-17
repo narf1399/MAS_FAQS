@@ -7,4 +7,24 @@
 #--Modules--#
 export PYTHONPATH = $PYTHONPATH:myModulePath
 
+#--Indentation issues--#
+Use spaces instead of tabs (interoperability)
+
+#--directory--#
+
+~/pythoncodes/HelloWorld $ tree
+.
+├── scripts
+│   └── helloworld.py
+├── setup.py
+└── src
+    └── hello_world_module
+        ├── helloworld_module.py
+        └── __init__.py
+
+#--Build an install--#
+Build:
+python setup.py build
+Install:
+sudo python setup.py install
 
