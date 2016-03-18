@@ -1,0 +1,16 @@
+Remote		|	Remote
+User(Git)	|	User(Git)
+Account(Yours)	|	Account(Friends)
+
+1. way:	git clone friendsAccount
+	fork repo
+	git remote add my_fork myAccount
+	# Get the names
+	git remote -v 
+	# Get the branch
+	git branch
+	# Push
+	git push my_fork branch_name
+
+2. way: fork repo into my account
+	git clone myAccount

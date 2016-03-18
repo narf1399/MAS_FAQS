@@ -2,6 +2,8 @@
 git init
 # Add a file
 git add <filename>
+# Add everything
+git add --all
 # Commit a file
 git commit -m "My comment about the commit" <filename>
 # Show info about the git status
@@ -12,3 +14,9 @@ git branch
 git branch <myBranch>
 # Show differences
 git diff <Commit ID1> <Commit ID2>
+# 
+git remote add origin https://github.com/...
+# push
+git push -u origin master
+# Adresses of origin etc
+git remote -v
