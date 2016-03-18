@@ -12,3 +12,25 @@ $ sudo apt-get install ros-indigo-desktop-full
 -------------------
 
 Stopped at 4.2)
+
+-------
+CMakeLists.txt
+find_package <- build dependency
+catkin_package <- run dependency
+
+------
+To run something:
+1. Start ros master:
+roscore
+2. then:
+./script
+or
+rosrun pkg_name script_name
+----
+
+rostopic echo /topic_name
+
+----
+Publish something on a topic
+
+rostopic pub /topic_name msg_type
