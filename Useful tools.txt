@@ -1,0 +1,6 @@
+terminator:
+Nice tileable terminal
+
+build-essentials:
+Compilers (Cpp, etc)
+
