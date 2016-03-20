@@ -1,5 +1,10 @@
 Info for MINT:
 
+----
+We need the build essential
+sudo apt-get install build-essential -y
+----
+
 Basically replace $DISTRIB_CODENAME by 'trusty'. It is because the $DISTRIB_CODENAME for mint 17 is 'qiana' for which its 404 error.
 
 -------------------
@@ -34,3 +39,43 @@ rostopic echo /topic_name
 Publish something on a topic
 
 rostopic pub /topic_name msg_type
+----
+Publish every 10hz
+rostopic pub/topic_name msg_type "data: 'msg'" -r 10
+----
+Naming convention:
+small_letters_with_underscores
+----
+Graphic tool to see the node graph
+rosrun rqt_graph rqt_graph
+----
+Every import has to be in cmakelist and package.xml
+----
+NodeInfoQuery.srv
+first line: server
+second line: client
+----
+Sleep time difference:
+while loop with sleep(0.1)
+loop time is sleep time + processing time
+
+r = rospy.Rate(10)
+r.sleep()
+loop time is always 10 Hz
+if processing time is > loop time:
+will try to sync it (e.g. sleep 0.2s, processing 0.3)
+will sleep for 0.4 s total
+----
+roslaunch:
+pkg = pkg
+name = node name // will overwrite the name from the script
+type = script
+
+remap to make the connections instead of hardcoding it
+always remap subscriber, not publisher
+
+launch lots of node (and start roscore in the process, but do it separately):
+roslaunch pkg_name launch_file
+
+
+
