@@ -1,0 +1,5 @@
+Delete duplicate menu entries:
+
+locate *.desktop | grep <name of entry>
+
+Then go there and delete it
